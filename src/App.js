@@ -14,7 +14,7 @@ class App extends React.Component {
     this.getDates();
   }
   getDates() {
-    return fetch("http://localhost:8080/data")
+    return fetch("http://172.16.1.154:8080/data")
       .then(response => {
         if (!response.ok) {
           throw new Error("HTTP error, status = " + response.status);
